@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:circularflow_radiusInDP="300"
+    tools:context=".view.MainActivity"
+      >>
+
+    <EditText
+        android:id="@+id/edittextmail"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="Enter mail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittextpassword"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextmail" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="sıgnup"
+        android:text="SIGN UP"
+        app:circularflow_radiusInDP="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextpassword" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        android:onClick="Sıgn_in"
+        android:text="SIGN IN"
+        app:circularflow_radiusInDP="30"
+        app:layout_constraintEnd_toStartOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittextpassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
